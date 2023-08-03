@@ -1,28 +1,25 @@
 package com.example.javamovieapi;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
-import javafx.scene.text.Text;
+import javafx.scene.control.TextField;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.ResourceBundle;
 
-public class MovieController implements Initializable {
+public class MovieController {
 
     @FXML
-    private Text name;
+    private TextField SearchBar;
+
     @FXML
     private ListView<String> movieListView;
 
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    @FXML
+    void searchBtn(ActionEvent event) {
         try {
-            List<Movie> movies = APIUtility.getMovies("Barbie");
+            List<Movie> movies = APIUtility.getMovies(SearchBar.getText());
             for(Movie movie: movies) {
                 movieListView.getItems().add(movie.getMovieDetail().getMovieTitle());
             }
@@ -32,4 +29,5 @@ public class MovieController implements Initializable {
             throw new RuntimeException(e);
         }
     }
+
 }
