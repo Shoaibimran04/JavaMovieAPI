@@ -22,4 +22,11 @@ public class MovieDetail {
     public String getRelease_date() {
         return release_date;
     }
+
+    @Override
+    public String toString() {
+        return getMovieTitle();
+    }
+
+
 }
