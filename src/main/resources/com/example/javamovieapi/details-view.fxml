@@ -5,11 +5,11 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javamovieapi.DetailsView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4fc1e9;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javamovieapi.DetailsView">
    <children>
-      <Text fx:id="movieName" layoutX="172.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Name" />
-      <Text fx:id="movieReleaseDate" layoutX="190.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Release Date" />
-      <Text fx:id="movieDescription" layoutX="182.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Description" />
+      <Text fx:id="movieName" layoutX="142.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="126.00003051757812" />
+      <Text fx:id="movieReleaseDate" layoutX="138.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="134.66665649414062" />
+      <Text fx:id="movieDescription" layoutX="142.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="126.00003051757807" />
       <Button layoutX="224.0" layoutY="292.0" mnemonicParsing="false" onAction="#back" text="Back" />
    </children>
 </AnchorPane>

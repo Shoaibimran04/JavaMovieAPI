@@ -20,7 +20,7 @@ public class DetailsView {
 
     public void loadDetails(MovieDetail movie) {
         movieName.setText(movie.getMovieTitle());
-//        movieDescription.setText(movie.getDescription());
+        movieDescription.setText(movie.getDescription());
 //        movieReleaseDate.setText(movie.getRelease_date());
     }
 
